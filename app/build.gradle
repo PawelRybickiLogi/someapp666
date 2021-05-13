@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+}
+
+android {
+    compileSdkVersion projectVersions.compileSdk
+    buildToolsVersion projectVersions.buildTool
+
+    defaultConfig {
+        applicationId "com.company.movies"
+        minSdkVersion projectVersions.minSdk
+        targetSdkVersion projectVersions.targetSdk
+        versionCode projectVersions.versionCode
+        versionName projectVersions.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation project(':core-architecture')
+    implementation project(':common-ui')
+    implementation project(':utils')
+    implementation project(':networking')
+
+    implementation project(':movies-list')
+    implementation project(':movie-details')
+
+    implementation generalDependencies.values()
+    implementation androidXDependencies.values()
+    implementation coroutinesDependencies.values()
+    implementation koinDependencies.values()
+
+    testImplementation testDependencies.values()
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="movie_detail_label_description">Plot</string>
+    <string name="movie_detail_label_score">Score</string>
+    <string name="movie_detail_label_rating">Rating</string>
+    <string name="movie_detail_label_popularity">Popularity</string>
+    <string name="movie_detail_label_director">Director</string>
+    <string name="movie_detail_label_writer">Writer</string>
+    <string name="movie_detail_label_actor">Actor</string>
+    <string name="error_message">Error, try again!</string>
+</resources>

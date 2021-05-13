@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="movies_list_search_hint">No movies to show. Either too many results or none found (or network error if You\'ve been sneaky…</string>
+</resources>

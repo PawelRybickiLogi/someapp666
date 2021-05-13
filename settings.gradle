@@ -1,0 +1,8 @@
+include ':common-ui'
+include ':networking'
+rootProject.name = "moviesapp"
+include ':movie-details'
+include ':movies-list'
+include ':utils'
+include ':core-architecture'
+include ':app'
